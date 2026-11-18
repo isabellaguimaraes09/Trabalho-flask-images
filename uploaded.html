@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imagem Enviada</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Imagem Enviada com Sucesso!</h1>
+    <img src="{{ url_for('get_file', filename=filename) }}" alt="Imagem Enviada">
+    <br>
+    <a href="{{ url_for('index') }}">Voltar</a>
+</body>
+</html>
